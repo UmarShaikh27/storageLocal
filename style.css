@@ -1,0 +1,80 @@
+.maindiv{
+    min-height: 100vh;
+    background-color: #78A1BB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginForm{
+    padding: 25px;
+    /* background-color: #EBF5EE; */
+    width: 40%;
+    background: #EBF5EE;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+  
+}
+.heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.loginForm > div{
+    display: flex;
+    justify-content: center;
+}
+.form-control{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+.form-control:focus{
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+.chick{
+    font-size: 25px;
+}
+.chick:hover{
+    cursor: pointer;
+    color: #78A1BB;
+    transition: all 0.3s;
+}
+.loginbtn{
+    font-size: 20px;
+}
+
+/* DASHBORAD */
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.dashboard>div{
+    display: flex;
+    
+}
+.dashboard ul{
+    list-style-type: none;
+    font-size: 23px;
+    padding-bottom: 5px;
+
+}
+
+
+
+/* MEDIA QUUERIES */
+@media screen and (max-width : 960px){
+    .loginForm{
+        width: 70%;
+    }
+}
+@media screen and (max-width : 600px){
+    .loginForm{
+        width: 100%;
+    }
+}
