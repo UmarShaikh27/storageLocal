@@ -75,6 +75,9 @@ const userLogIn = () => {
        window.location.assign("./dashboard.html")
        
 
+    }else{
+       alert("Invalid user")
+
     }
 
 }
@@ -98,11 +101,15 @@ const dashboardshow = () => {
     showpostalcode.innerHTML = userData.postalcode
     
 
+
     // head.innerHTML = userData.username
 
 }
 
-
+const logOut = () => {
+    window.location.assign("./login.html")
+    localStorage.removeItem("currentUser")
+}
 
 
 
